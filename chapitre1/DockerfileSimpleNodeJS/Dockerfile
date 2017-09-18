@@ -1,3 +1,5 @@
+FROM centos:latest
+MAINTAINER Aliou BA <alioubafr@gmail.com>
 RUN yum install epel-release -y && yum install nodejs -y
 RUN mkdir /app
 COPY index.js /app
